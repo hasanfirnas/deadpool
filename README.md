@@ -22,7 +22,7 @@
 2) SERVEO (https://serveo.net/)
 3) NGROK (https://ngrok.com/)
 
-# SCREENSHOT (Android-termux)
+# SCREENSHOT (Kali-linux)
 ![Shot](https://github.com/404-ghost/deadpool/blob/master/screenshort.png)
 ### TESTED ON FOLLOWING:-
 * **Kali Linux - Rolling Edition**
