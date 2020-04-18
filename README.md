@@ -5,3 +5,8 @@
 <p align="center">
   <img src="logo.png"> 
 </p>
+# AVAILABLE TUNNELLING OPTIONS**
+0) LOCALHOST
+1) LOCALXPOSE (https://localxpose.io)
+2) SERVEO (https://serveo.net/)
+3) NGROK (https://ngrok.com/)
