@@ -619,12 +619,12 @@ def selectServer(port):
         inchoice = input("\n\n{0}YOUR CHOICE ---> {2}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
         system('clear')
         if inchoice == '1':
-            customLocalxpose(port)
+            customServeo(port)
         elif inchoice == '2':
-            randomLocalxpose(port)
+            randomServeo(port)
         else:
             system('clear')
-            return runLocalxpose(port)
+            print("{0}[{2}!{0}]{2} Invalid option!".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
     elif choice == '3':
         system('chmod 777 ./Server/loclx')
         system('clear')
