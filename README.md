@@ -34,6 +34,7 @@
 * Python 3
 * PHP
 * sudo
+* wget
 ## DISCLAIMER
 <p align="center">
   TO BE USED FOR EDUCATIONAL PURPOSES ONLY
