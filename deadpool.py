@@ -21,7 +21,7 @@ RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2= '\033[91m', '\033[46
 def menu_q():
     system('clear')
     print("            {5}+++++++++++++++++++++++++++++++++++++++++++++++++\n           |  {2}WITH GREAT POWER , COMES GREAT RESPONSIBILITY{5}  |     \n            +++++++++++++++++++++++++++++++++++++++++++++++++{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
-    if input("\n\n\n\nDo you agree to use this tool for educational/testing purposes only? {5}({3}Y{5}/{0}N{5})\n{0}DEADPOOL ---> {2}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW)).upper() == 'Y':
+    if input("\n\n\n\nDo you agree to use this tool for educational purposes only? {5}({3}Y{5}/{0}N{5})\n{0}DEADPOOL ---> {2}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW)).upper() == 'Y':
         sleep(1)
     else:
         print("\n\n{0}YOU ARE NOT AUTHORIZED TO USE THIS TOOL.YOU CAN ONLY USE IT FOR EDUCATIONAL PURPOSE.! ]{4}\n\n".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
