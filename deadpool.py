@@ -718,8 +718,10 @@ def getCredentials(port):
             system('clear')
             getCredentials(port)
             #ref=ref+1
+verCheck()
 menu_q()         
-loop()            
+loop()
+system("git pull --quiet")
 checkPHP()
 checkwget()
 checkNgrok()
