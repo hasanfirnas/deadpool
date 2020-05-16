@@ -22,7 +22,7 @@ def verCheck():
     file2.close()
     if x[0] == z[0]:
         print("{0}[{2}#{0}] {2}[Up-To-Date]- {0}v {6}{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, z[0]))
-        system('git checkout HEAD^ Server --quiet && git checkout HEAD^ LICENSE --quiet && git checkout HEAD^ Checks.py --quiet && git checkout HEAD^ deadpool.py --quiet && git checkout HEAD^ pross_kill.py --quiet && git checkout HEAD^ version.txt --quiet')
+        system('git checkout HEAD^ Server --quiet && git checkout HEAD^ WebPages --quiet && git checkout HEAD^ LICENSE --quiet && git checkout HEAD^ Checks.py --quiet && git checkout HEAD^ deadpool.py --quiet && git checkout HEAD^ pross_kill.py --quiet && git checkout HEAD^ version.txt --quiet')
         system('git stash --quiet')
         system('git pull --quiet')
         system('rm -rf test.txt')
