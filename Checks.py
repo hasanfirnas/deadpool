@@ -11,7 +11,7 @@ RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2= '\033[91m', '\033[46
 def verCheck():
     system('clear')
     print("{0}[{2}#{0}] {2}Checking For Updates{2}...".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
-    system('wget -O test.txt https://raw.githubusercontent.com/404-ghost/symbiote/master/version.txt')
+    system('wget -q -O test.txt https://raw.githubusercontent.com/404-ghost/deadpool/master/version.txt')
     file = open('version.txt','r')
     a = file.read()
     x = a.split("\n")
@@ -22,8 +22,11 @@ def verCheck():
     file2.close()
     if x[0] == z[0]:
         print("{0}[{2}#{0}] {2}[Up-To-Date]- {0}v {6}{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, z[0]))
+        system('git checkout HEAD^ Server --quiet && git checkout HEAD^ LICENSE --quiet && git checkout HEAD^ Checks.py --quiet && git checkout HEAD^ deadpool.py --quiet && git checkout HEAD^ pross_kill.py --quiet && git checkout HEAD^ version.txt --quiet')
+        system('git stash --quiet')
+        system('git pull --quiet')
         system('rm -rf test.txt')
-        sleep(3)
+        sleep(2)
     else:
         print("{0}[{2}#{0}] {2}Their Is A Newer Version Available.".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
         print("{0}[{2}#{0}] {0}[{2}Current{0}]{2}- {0}v {6}\n{0}[{2}#{0}] {0}[{2}Available{0}]{2}- {0}v.{7}".format(RED, WHITE, CYAN, GREEN, DEFAULT, YELLOW, x[0], z[0])) 
@@ -58,8 +61,8 @@ def verCheck():
 ##            system('rm -rf version.txt && wget https://raw.githubusercontent.com/404-ghost/symbiote/master/version.txt')
 ##            system('clear')
             #system("git clean -d -f > /dev/null && git pull -f > /dev/null")
-        system('git checkout HEAD^ CapturedData && git checkout HEAD^ Server && git checkout HEAD^ LICENSE && git checkout HEAD^ Checks.py && git checkout HEAD^ logo.py && git checkout HEAD^ makepath.py && git checkout HEAD^ symbiote.py && git checkout HEAD^ version.txt')
-        system('git stash')
+        system('git checkout HEAD^ Server --quiet && git checkout HEAD^ LICENSE --quiet && git checkout HEAD^ Checks.py --quiet && git checkout HEAD^ deadpool.py --quiet && git checkout HEAD^ pross_kill.py --quiet && git checkout HEAD^ version.txt --quiet')
+        system('git stash --quiet')
         system('git pull')
         sleep(1)
         system('rm -rf test.txt')
@@ -68,7 +71,9 @@ def verCheck():
         x = a.split("\n")      
         print("{0}[{2}*{0}] {2}Version Status After Update.{2}.\n".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
         print("{0}[{2}*{0}] {0}[{2}Current{0}]{2}- {0}v {6}\n{0}[{2}*{0}] {0}[{2}Available{0}]{2}- {0}v.{7}{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, x[0], z[0]))
-        sleep(5)
+        sleep(1)
+        print("\t{2}[{0}#{2}] {0}Restart program \n\t {2}Enter this command to run {0}-> {3}python3 deadpool.py".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
+        exit()
 def checkjp2a():
     system('clear')
     if 256 != system('which jp2a > /dev/null'):
@@ -114,6 +119,7 @@ def checkNgrok():
             system('chmod +x ngrok')
             system('clear')
             print("{1} ".format(GREEN, DEFAULT, RED)) 
+            print("\t{2}[{0}#{2}] {0}Restart program \n\t {2}Enter this command to run {0}-> {3}python3 deadpool.py".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
             exit()
         else:
             ostype = systemos().lower()
@@ -149,6 +155,7 @@ def checkLocalxpose():
             system('mv loclx-linux-* loclx && chmod +x loclx && mv loclx Server/')
             #system('chmod +x loclx')
             print("{4} ".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
+            print("\t{2}[{0}#{2}] {0}Restart program \n\t {2}Enter this command to run {0}-> {3}python3 deadpool.py".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
             exit()
         else:
             ostype = systemos().lower()
